@@ -199,3 +199,29 @@ Call log:
 [2025-12-10 14:37:30] INFO: Sucesso na ação: Capturar SiteKey (1ms)
 [2025-12-10 14:37:30] INFO: Iniciando resolução de Captcha...
 [2025-12-10 14:37:31] INFO: Tarefa Captcha criada: 693860132. Aguardando solução...
+[2025-12-10 15:22:52] INFO: Iniciando ação: Navegar para Login
+[2025-12-10 15:22:54] INFO: Sucesso na ação: Navegar para Login (1737ms)
+[2025-12-10 15:22:54] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-10 15:22:57] ERROR: FALHA CRÍTICA na ação: Preencher Credenciais
+[2025-12-10 15:22:57] ERROR: URL Atual: https://pitzi.com.br/sellers/sign_in
+[2025-12-10 15:22:57] ERROR: Erro: page.fill: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('input[name="seller[email]"]')[22m
+
+[2025-12-10 15:22:57] ERROR: Não foi possível tirar screenshot do erro.
+[2025-12-10 15:24:58] INFO: Iniciando ação: Navegar para Login
+[2025-12-10 15:25:02] INFO: Sucesso na ação: Navegar para Login (3158ms)
+[2025-12-10 15:25:02] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-10 15:25:02] INFO: Sucesso na ação: Preencher Credenciais (40ms)
+[2025-12-10 15:25:02] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-10 15:25:02] INFO: Sucesso na ação: Capturar SiteKey (1ms)
+[2025-12-10 15:25:02] INFO: Iniciando resolução de Captcha...
+[2025-12-10 15:25:03] INFO: Tarefa Captcha criada: 922375118. Aguardando solução...
+[2025-12-10 15:25:10] INFO: Iniciando ação: Navegar para Login
+[2025-12-10 15:25:13] ERROR: FALHA CRÍTICA na ação: Navegar para Login
+[2025-12-10 15:25:13] ERROR: URL Atual: https://pitzi.com.br/sellers/sign_in
+[2025-12-10 15:25:13] ERROR: Erro: page.goto: Target page, context or browser has been closed
+Call log:
+[2m  - navigating to "https://pitzi.com.br/sellers/sign_in", waiting until "domcontentloaded"[22m
+
+[2025-12-10 15:25:13] ERROR: Não foi possível tirar screenshot do erro.

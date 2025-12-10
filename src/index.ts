@@ -20,6 +20,11 @@ chromium.use(stealthPlugin());
 
     const browser: Browser = await chromium.launch({ 
         headless: process.env.HEADLESS === 'true',
+        proxy: {
+            server: '216.10.27.159:6837',
+            username: 'urixdzgb',
+            password: 'b2rqzhev455w'
+        },
         args: [
             '--no-sandbox', 
             '--disable-setuid-sandbox',

@@ -17,11 +17,21 @@ import { processFile } from './services/fileProcess';
 
     const browser: Browser = await chromium.launch({ 
         headless: process.env.HEADLESS === 'true',
-        args: ['--no-sandbox', '--disable-setuid-sandbox'] 
+        args: ['--no-sandbox', 
+            '--disable-setuid-sandbox',
+            '--disable-blink-features=AutomationControlled', 
+            '--disable-infobars',
+            '--window-size=1920,1080'] 
     });
     
-    const context: BrowserContext = await browser.newContext({ acceptDownloads: true });
+    const context: BrowserContext = await browser.newContext({ 
+        acceptDownloads: true,
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        viewport: { width: 1920, height: 1080 }
+    });
+    
     const page: Page = await context.newPage();
+    page.setDefaultTimeout(60000);
 
     try {
         const dates = getDates();

@@ -1,0 +1,171 @@
+[2025-12-05 10:36:30] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:36:33] INFO: Sucesso na ação: Navegar para Login (2670ms)
+[2025-12-05 10:36:33] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:36:33] INFO: Sucesso na ação: Preencher Credenciais (60ms)
+[2025-12-05 10:36:33] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:36:33] INFO: Sucesso na ação: Capturar SiteKey (2ms)
+[2025-12-05 10:36:33] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:36:35] INFO: Tarefa Captcha criada: 500481736. Aguardando solução...
+[2025-12-05 10:36:50] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:36:50] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:36:52] INFO: Sucesso na ação: Injetar Token e Login (1640ms)
+[2025-12-05 10:36:52] INFO: Iniciando ação: Preencher Filtros de Data
+[2025-12-05 10:37:22] ERROR: FALHA CRÍTICA na ação: Preencher Filtros de Data
+[2025-12-05 10:37:22] ERROR: URL Atual: https://pitzi.com.br/parceiros/entrar
+[2025-12-05 10:37:22] ERROR: Erro: locator.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('select[name="start_date[month]"]')[22m
+
+[2025-12-05 10:37:22] ERROR: Execução falhou: locator.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('select[name="start_date[month]"]')[22m
+
+[2025-12-05 10:44:10] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:44:13] INFO: Sucesso na ação: Navegar para Login (2708ms)
+[2025-12-05 10:44:13] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:44:13] INFO: Sucesso na ação: Preencher Credenciais (59ms)
+[2025-12-05 10:44:13] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:44:13] INFO: Sucesso na ação: Capturar SiteKey (2ms)
+[2025-12-05 10:44:13] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:44:14] INFO: Tarefa Captcha criada: 307739268. Aguardando solução...
+[2025-12-05 10:44:30] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:44:30] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:44:33] INFO: Sucesso na ação: Injetar Token e Login (2892ms)
+[2025-12-05 10:44:33] INFO: Iniciando ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:45:03] ERROR: FALHA CRÍTICA na ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:45:03] ERROR: URL Atual: https://pitzi.com.br/parceiros/entrar
+[2025-12-05 10:45:03] ERROR: Erro: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+
+[2025-12-05 10:45:03] ERROR: Execução falhou: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+
+[2025-12-05 10:45:57] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:46:00] INFO: Sucesso na ação: Navegar para Login (2359ms)
+[2025-12-05 10:46:00] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:46:00] INFO: Sucesso na ação: Preencher Credenciais (32ms)
+[2025-12-05 10:46:00] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:46:00] INFO: Sucesso na ação: Capturar SiteKey (2ms)
+[2025-12-05 10:46:00] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:46:01] INFO: Tarefa Captcha criada: 680014770. Aguardando solução...
+[2025-12-05 10:47:20] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:47:20] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:47:33] INFO: Sucesso na ação: Injetar Token e Login (13203ms)
+[2025-12-05 10:47:33] INFO: Iniciando ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:47:34] INFO: Sucesso na ação: Preencher Filtros de Data (Original) (492ms)
+[2025-12-05 10:47:34] INFO: Iniciando ação: Aplicar Filtro
+[2025-12-05 10:47:50] INFO: Sucesso na ação: Aplicar Filtro (16698ms)
+[2025-12-05 10:47:50] INFO: Iniciando ação: Iniciar Download
+[2025-12-05 10:47:52] INFO: Sucesso na ação: Iniciar Download (1914ms)
+[2025-12-05 10:47:52] INFO: Download concluído: /Users/basilio/Documents/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-05 10:47:52] INFO: Processando arquivo: /Users/basilio/Documents/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-05 10:47:52] ERROR: Execução falhou: Invalid Record Length: expect 3, got 16 on line 2
+[2025-12-05 10:49:08] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:49:10] INFO: Sucesso na ação: Navegar para Login (2717ms)
+[2025-12-05 10:49:10] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:49:10] INFO: Sucesso na ação: Preencher Credenciais (61ms)
+[2025-12-05 10:49:10] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:49:10] INFO: Sucesso na ação: Capturar SiteKey (2ms)
+[2025-12-05 10:49:10] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:49:12] INFO: Tarefa Captcha criada: 248971233. Aguardando solução...
+[2025-12-05 10:49:17] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:49:17] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:49:27] INFO: Sucesso na ação: Injetar Token e Login (9966ms)
+[2025-12-05 10:49:27] INFO: Iniciando ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:49:27] INFO: Sucesso na ação: Preencher Filtros de Data (Original) (294ms)
+[2025-12-05 10:49:27] INFO: Iniciando ação: Aplicar Filtro
+[2025-12-05 10:49:43] INFO: Sucesso na ação: Aplicar Filtro (15635ms)
+[2025-12-05 10:49:43] INFO: Iniciando ação: Iniciar Download
+[2025-12-05 10:49:44] INFO: Sucesso na ação: Iniciar Download (622ms)
+[2025-12-05 10:49:44] INFO: Download concluído: /Users/basilio/Documents/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-05 10:49:44] INFO: Processando arquivo: /Users/basilio/Documents/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-05 10:49:44] ERROR: Execução falhou: Invalid Record Length: expect 3, got 16 on line 2
+[2025-12-05 10:53:42] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:53:44] INFO: Sucesso na ação: Navegar para Login (2562ms)
+[2025-12-05 10:53:44] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:53:44] INFO: Sucesso na ação: Preencher Credenciais (70ms)
+[2025-12-05 10:53:44] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:53:44] INFO: Sucesso na ação: Capturar SiteKey (2ms)
+[2025-12-05 10:53:44] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:53:46] INFO: Tarefa Captcha criada: 860371287. Aguardando solução...
+[2025-12-05 10:54:12] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:54:12] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:54:14] INFO: Sucesso na ação: Injetar Token e Login (1699ms)
+[2025-12-05 10:54:14] INFO: Iniciando ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:54:44] ERROR: FALHA CRÍTICA na ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:54:44] ERROR: URL Atual: https://pitzi.com.br/parceiros/entrar
+[2025-12-05 10:54:44] ERROR: Erro: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+
+[2025-12-05 10:54:44] ERROR: Execução falhou: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+
+[2025-12-05 10:55:18] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:55:23] INFO: Sucesso na ação: Navegar para Login (4607ms)
+[2025-12-05 10:55:23] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:55:23] INFO: Sucesso na ação: Preencher Credenciais (46ms)
+[2025-12-05 10:55:23] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:55:23] INFO: Sucesso na ação: Capturar SiteKey (2ms)
+[2025-12-05 10:55:23] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:55:24] INFO: Tarefa Captcha criada: 107466782. Aguardando solução...
+[2025-12-05 10:55:51] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:55:51] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:55:52] INFO: Sucesso na ação: Injetar Token e Login (1776ms)
+[2025-12-05 10:55:52] INFO: Iniciando ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:56:22] ERROR: FALHA CRÍTICA na ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:56:22] ERROR: URL Atual: https://pitzi.com.br/parceiros/entrar
+[2025-12-05 10:56:22] ERROR: Erro: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+
+[2025-12-05 10:56:23] ERROR: Execução falhou: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+
+[2025-12-05 10:56:28] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:56:32] INFO: Sucesso na ação: Navegar para Login (4057ms)
+[2025-12-05 10:56:32] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:56:32] INFO: Sucesso na ação: Preencher Credenciais (27ms)
+[2025-12-05 10:56:32] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:56:32] INFO: Sucesso na ação: Capturar SiteKey (6ms)
+[2025-12-05 10:56:32] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:56:33] INFO: Tarefa Captcha criada: 86014464. Aguardando solução...
+[2025-12-05 10:56:38] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:56:38] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:56:54] INFO: Sucesso na ação: Injetar Token e Login (15819ms)
+[2025-12-05 10:56:54] INFO: Iniciando ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:56:55] INFO: Sucesso na ação: Preencher Filtros de Data (Original) (495ms)
+[2025-12-05 10:56:55] INFO: Iniciando ação: Aplicar Filtro
+[2025-12-05 10:57:09] INFO: Sucesso na ação: Aplicar Filtro (14198ms)
+[2025-12-05 10:57:09] INFO: Iniciando ação: Iniciar Download
+[2025-12-05 10:57:11] INFO: Sucesso na ação: Iniciar Download (1813ms)
+[2025-12-05 10:57:11] INFO: Download concluído: /Users/basilio/Documents/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-05 10:57:11] INFO: Processando arquivo: /Users/basilio/Documents/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-05 10:57:11] INFO: Arquivo convertido salvo em: /Users/basilio/Documents/robots-alegria/output/20251205_pitzi.txt
+[2025-12-05 10:57:11] INFO: Browser encerrado.
+[2025-12-05 10:57:21] INFO: Iniciando ação: Navegar para Login
+[2025-12-05 10:57:24] INFO: Sucesso na ação: Navegar para Login (2166ms)
+[2025-12-05 10:57:24] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-05 10:57:24] INFO: Sucesso na ação: Preencher Credenciais (95ms)
+[2025-12-05 10:57:24] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-05 10:57:24] INFO: Sucesso na ação: Capturar SiteKey (16ms)
+[2025-12-05 10:57:24] INFO: Iniciando resolução de Captcha...
+[2025-12-05 10:57:25] INFO: Tarefa Captcha criada: 810219718. Aguardando solução...
+[2025-12-05 10:58:02] INFO: Captcha resolvido com sucesso.
+[2025-12-05 10:58:02] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-05 10:58:06] INFO: Sucesso na ação: Injetar Token e Login (3892ms)
+[2025-12-05 10:58:06] INFO: Iniciando ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:58:36] ERROR: FALHA CRÍTICA na ação: Preencher Filtros de Data (Original)
+[2025-12-05 10:58:36] ERROR: URL Atual: https://pitzi.com.br/parceiros/entrar
+[2025-12-05 10:58:36] ERROR: Erro: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+
+[2025-12-05 10:58:36] ERROR: Execução falhou: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="start_date[month]"]')[22m
+

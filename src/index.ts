@@ -1,5 +1,7 @@
 import 'dotenv/config';
-import { chromium, Browser, BrowserContext, Page } from 'playwright';
+import { chromium } from 'playwright-extra';
+import stealthPlugin from 'puppeteer-extra-plugin-stealth';
+import { Browser, BrowserContext, Page } from 'playwright';
 import path from 'path';
 import fs from 'fs-extra';
 import logger from './utils/logger';
@@ -8,6 +10,7 @@ import { getDates } from './utils/dateHelper';
 import { solveCaptcha } from './services/captcha';
 import { processFile } from './services/fileProcess';
 
+chromium.use(stealthPlugin());
 
 (async () => {
     if (!process.env.PITZI_EMAIL || !process.env.ANTICAPTCHA_KEY) {
@@ -17,11 +20,15 @@ import { processFile } from './services/fileProcess';
 
     const browser: Browser = await chromium.launch({ 
         headless: process.env.HEADLESS === 'true',
-        args: ['--no-sandbox', 
+        args: [
+            '--no-sandbox', 
             '--disable-setuid-sandbox',
             '--disable-blink-features=AutomationControlled', 
             '--disable-infobars',
-            '--window-size=1920,1080'] 
+            '--window-size=1920,1080',
+            '--disable-web-security',
+            '--disable-features=IsolateOrigins,site-per-process'
+        ] 
     });
     
     const context: BrowserContext = await browser.newContext({ 
@@ -39,13 +46,14 @@ import { processFile } from './services/fileProcess';
         await fs.ensureDir(downloadPath);
 
         await executeAction(page, 'Navegar para Login', async (p) => {
-            await p.goto('https://pitzi.com.br/sellers/sign_in');
+            await p.goto('https://pitzi.com.br/sellers/sign_in', { waitUntil: 'domcontentloaded' });
         });
 
         await executeAction(page, 'Preencher Credenciais', async (p) => {
             await p.fill('input[name="seller[email]"]', process.env.PITZI_EMAIL!);
             await p.fill('input[name="seller[password]"]', process.env.PITZI_PASS!);
         });
+
         const siteKey = await executeAction<string | null>(page, 'Capturar SiteKey', async (p) => {
             return await p.getAttribute('div.g-recaptcha', 'data-sitekey');
         });
@@ -63,15 +71,20 @@ import { processFile } from './services/fileProcess';
             await p.click('input[name="commit"]');
             await p.waitForLoadState('networkidle');
         });
-        await executeAction(page, 'Preencher Filtros de Data (Original)', async (p) => {
+
+        await executeAction(page, 'Preencher Filtros de Data', async (p) => {
             await p.locator('[name="start_date[month]"]').click();
             await p.locator('[name="start_date[month]"]').type(dates.startMonth);
+            
             await p.locator('[name="start_date[year]"]').click();
             await p.locator('[name="start_date[year]"]').type(dates.startYear);
+            
             await p.locator('[name="end_date[day]"]').click();
             await p.locator('[name="end_date[day]"]').type(dates.endDay);
+            
             await p.locator('[name="end_date[month]"]').click();
             await p.locator('[name="end_date[month]"]').type(dates.endMonth);
+            
             await p.locator('[name="end_date[year]"]').click();
             await p.locator('[name="end_date[year]"]').type(dates.endYear);
         });
@@ -84,7 +97,6 @@ import { processFile } from './services/fileProcess';
         const downloadPromise = page.waitForEvent('download');
         
         await executeAction(page, 'Iniciar Download', async (p) => {
-
             await p.click('xpath=/html/body/div[1]/section[2]/div/ul/li[1]/a');
         });
 

@@ -70,13 +70,12 @@ chromium.use(stealthPlugin());
         await executeAction(page, 'Injetar Token e Login', async (p) => {
             await p.evaluate((token: string) => {
                 const el = document.getElementById('g-recaptcha-response');
-                if(el) el.innerHTML = token;
+                if (el) el.innerHTML = token;
             }, captchaToken);
             
             await p.click('input[name="commit"]');
             await p.waitForLoadState('networkidle');
         });
-
         await executeAction(page, 'Preencher Filtros de Data', async (p) => {
             await p.locator('[name="start_date[month]"]').click();
             await p.locator('[name="start_date[month]"]').type(dates.startMonth);
@@ -96,7 +95,7 @@ chromium.use(stealthPlugin());
 
         await executeAction(page, 'Aplicar Filtro', async (p) => {
             await p.click('input[name="commit"]');
-            await p.waitForTimeout(5000); 
+            await p.waitForTimeout(5000);
         });
 
         const downloadPromise = page.waitForEvent('download');

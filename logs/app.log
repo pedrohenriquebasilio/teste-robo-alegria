@@ -225,3 +225,24 @@ Call log:
 [2m  - navigating to "https://pitzi.com.br/sellers/sign_in", waiting until "domcontentloaded"[22m
 
 [2025-12-10 15:25:13] ERROR: Não foi possível tirar screenshot do erro.
+[2025-12-11 12:08:14] INFO: Iniciando ação: Navegar para Login
+[2025-12-11 12:08:18] INFO: Sucesso na ação: Navegar para Login (3548ms)
+[2025-12-11 12:08:18] INFO: Iniciando ação: Preencher Credenciais
+[2025-12-11 12:08:18] INFO: Sucesso na ação: Preencher Credenciais (47ms)
+[2025-12-11 12:08:18] INFO: Iniciando ação: Capturar SiteKey
+[2025-12-11 12:08:18] INFO: Sucesso na ação: Capturar SiteKey (2ms)
+[2025-12-11 12:08:18] INFO: Iniciando resolução de Captcha...
+[2025-12-11 12:08:19] INFO: Tarefa Captcha criada: 444172915. Aguardando solução...
+[2025-12-11 12:09:18] INFO: Captcha resolvido com sucesso.
+[2025-12-11 12:09:18] INFO: Iniciando ação: Injetar Token e Login
+[2025-12-11 12:09:40] INFO: Sucesso na ação: Injetar Token e Login (22018ms)
+[2025-12-11 12:09:40] INFO: Iniciando ação: Preencher Filtros de Data
+[2025-12-11 12:09:40] INFO: Sucesso na ação: Preencher Filtros de Data (317ms)
+[2025-12-11 12:09:40] INFO: Iniciando ação: Aplicar Filtro
+[2025-12-11 12:10:01] INFO: Sucesso na ação: Aplicar Filtro (21401ms)
+[2025-12-11 12:10:01] INFO: Iniciando ação: Iniciar Download
+[2025-12-11 12:10:03] INFO: Sucesso na ação: Iniciar Download (2218ms)
+[2025-12-11 12:10:03] INFO: Download concluído: /Users/basilio/Documents/pectec/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-11 12:10:03] INFO: Processando arquivo: /Users/basilio/Documents/pectec/robots-alegria/downloads/relatorio_analitico.csv
+[2025-12-11 12:10:04] INFO: Arquivo convertido salvo em: /Users/basilio/Documents/pectec/robots-alegria/output/20251211_pitzi.txt
+[2025-12-11 12:10:04] INFO: Browser encerrado.
